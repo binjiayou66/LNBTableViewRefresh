@@ -99,5 +99,4 @@
     _isRefreshing = NO;
 }
 
-
 @end
