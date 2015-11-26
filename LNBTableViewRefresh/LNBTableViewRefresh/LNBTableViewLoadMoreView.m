@@ -1,6 +1,6 @@
 //
 //  LNBTableViewLoadMoreView.m
-//  Day2-EGODemo
+//  LNBTableViewRefresh
 //
 //  Created by Naibin on 15/11/25.
 //  Copyright © 2015年 QianFeng. All rights reserved.
