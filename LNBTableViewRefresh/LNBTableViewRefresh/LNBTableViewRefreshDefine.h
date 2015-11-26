@@ -16,6 +16,7 @@
 //其中包括一个图片动画，动画图片命名规则为xxx0.png ... xxxN.png，N+1表示图片总数，即IMAGES_COUNT
 #define LOAD_IMAGE_NAME @"pig0"
 #define IMAGES_COUNT 5
+#define ANIMATION_TIMEINTERVAL 0.5
 //背景色
 #define BACKGROUND_COLOR [UIColor whiteColor]
 #define TITLE_COLOR [UIColor grayColor]

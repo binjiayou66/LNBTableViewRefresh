@@ -39,7 +39,7 @@
     }
     _loadImageView.animationImages = arr;
     _loadImageView.animationRepeatCount = 0;
-    _loadImageView.animationDuration = 1;
+    _loadImageView.animationDuration = ANIMATION_TIMEINTERVAL;
     
     [self addSubview:_loadImageView];
 }

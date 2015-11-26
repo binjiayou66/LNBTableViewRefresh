@@ -39,7 +39,7 @@
     }
     _refreshImageView.animationImages = arr;
     _refreshImageView.animationRepeatCount = 0;
-    _refreshImageView.animationDuration = 1;
+    _refreshImageView.animationDuration = ANIMATION_TIMEINTERVAL;
     
     [self addSubview:_refreshImageView];
 }
