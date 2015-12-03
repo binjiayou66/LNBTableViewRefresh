@@ -59,7 +59,7 @@
     if (scrollView.contentOffset.y < -(PULLED_HEIGHT + 5) && _isRefreshing == NO) {
         _titleLabel.text = K_RELEASE_TO_REFRESH;
     }
-
+    
     if (scrollView.isDragging) {
         if (scrollView.contentInset.top != 0) {
             _isRefreshing = NO;
@@ -71,7 +71,6 @@
 }
 
 - (void)aceRefreshScrollViewDidEndDragging:(UIScrollView *)scrollView {
-    NSLog(@"%f ... %d", scrollView.contentOffset.y, _isRefreshing);
     if (scrollView.contentOffset.y < -(PULLED_HEIGHT + 5) && _isRefreshing == NO) {
         _isRefreshing = YES;
         _titleLabel.text = K_IT_IS_REFRESHING;

@@ -56,7 +56,7 @@
 
 //用户操作
 - (void)aceLoadMoreScrollViewDidScroll:(UIScrollView *)scrollView {
-    if (scrollView.contentOffset.y + SCREEN_SIZE.height - PULLED_HEIGHT > scrollView.contentSize.height + PULLED_HEIGHT + 10 && _isLoading == NO) {
+    if (scrollView.contentOffset.y + scrollView.bounds.size.height > scrollView.contentSize.height + PULLED_HEIGHT + 5 && _isLoading == NO) {
         _titleLabel.text = K_RELEASE_TO_LOAD;
     }else if (scrollView.isDragging) {
         if (scrollView.contentInset.bottom != 0) {
@@ -69,7 +69,7 @@
 }
 
 - (void)aceLoadMoreScrollViewDidEndDragging:(UIScrollView *)scrollView {
-    if (scrollView.contentOffset.y + SCREEN_SIZE.height - PULLED_HEIGHT > scrollView.contentSize.height + PULLED_HEIGHT + 10 && _isLoading == NO) {
+    if (scrollView.contentOffset.y + scrollView.bounds.size.height > scrollView.contentSize.height + PULLED_HEIGHT + 5 && _isLoading == NO) {
         _isLoading = YES;
         _titleLabel.text = K_IT_IS_LOADING;
         [_loadImageView startAnimating];
